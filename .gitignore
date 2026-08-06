@@ -1,0 +1,14 @@
+# Secrets — the master encryption secret lives here, never commit it
+.env
+
+# SECURITY DEVIATION FROM THE encryption-setup SKILL (deliberate):
+# the plaintext snapshot contains member PII and Stripe billing data, and this
+# repo is PUBLIC (required for GitHub Pages on the free plan). Only the
+# encrypted output in public/ may ever be committed.
+public-encrypted/
+
+# Decrypt-verification scratch output
+decrypted/
+
+node_modules/
+.DS_Store
